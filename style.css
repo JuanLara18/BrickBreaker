@@ -1,0 +1,20 @@
+html, body {
+  margin: 2.2em;
+  background-image: url('imagenes/fondo.jpg');
+  padding: 0;
+}
+
+body{
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+#encabezado{
+  align-items: top;
+  margin: 2px;
+  padding: 3px;
+  background-color: rgb(0, 0, 29);
+}
