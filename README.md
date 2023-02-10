@@ -1,34 +1,21 @@
-# BrickBreaker
-por Miguel Antonio Parrado y Juan David Lara
+# Brick Breaker Game using p5.js
+This repository contains a simple implementation of the classic [Brick Breaker game](https://elgoog.im/breakout/) using JavaScript and the p5.js library. The project was created for educational purposes and is intended for anyone who wants to learn more about game development using JavaScript and p5.js.
 
-### Objetivo:
-El objetivo de este proyecto es replicar el clásico juego Breakout (https://elgoog.im/breakout/ es la versión de google del juego) este es uno de los conocidos juegos de atari que se juega por niveles en donde con una pelota eliminamos bloques dispuestos en un mapa, son 12 niveles y la dificultad varía de acuerdo a los mapas pues estos disponen de bloques de distinto tipo
+## Getting Started
+To run the game, simply open the index.html file in your web browser. No special setup is required. The game should work on most modern browsers.
 
-### Solución:
-La solución se puede ver más detallada en **BrickBreaker.pdf**.
-Trabajamos el canvas en Motor.js usando la librería p5, usamos archivos adicionales:
+## Controls
+- Move the paddle left: Press the left arrow key
+- Move the paddle right: Press the right arrow key
 
-- *Constantes.js:*
-Definimos las variables y constantes que usamos en el deesarrollo del juego como lo son los colores de los ladrillos y los mapas de los niveles.
+## Features
+The game includes the basic functionality of the original Brick Breaker game, such as moving the paddle to keep the ball in play and breaking the bricks to progress to the next level.
+The game also includes a simple scoring system that increases as the player breaks bricks.
+## Library
+This project uses the [p5.js](https://p5js.org/) library, a JavaScript library for creative coding. The library provides a simple and intuitive way to create interactive graphics, animations, and games using JavaScript.
 
-- *Ladrillos.js:*
-Definimos la clase lad que nos representa los ladrillos ubicados en una posición xy que corresponde a la esquina superior izquierda del ladrillo, le definimos un color y un tipo, el tipo representa si es un ladrillo fijo o no y, de no serlo le otorga una propiedad que luego al colisionar con la pelota le proporciona mayor velocidad.
+## Contributions
+This project is open to contributions from anyone who is interested. If you have ideas for improvements, feel free to submit a pull request.
 
-- *Base.js:*
-Definimos la clase base la que cuenta con una forma que corresponde a los mapas definidos en Constantes.js y con este de damos el Nivel que corresponde a la forma pero con ladrillos que luego se imprimen con revelar(). vacio es un método que nos permite verificar si ya acabamos todos los bloques posibles para pasar al siguiente nivel
-
-- *Plataforma.js:*
-Definimos la clase plat que representará la plataforma que el usuario puede mover, la mostramos con revelar() y verificamos su colisión de acuerdo a las dimensiones
-
-- *Pelota.js:*
-Definimos la clase pel que representará la pelota en el juego, ella se moverá con Movimiento() y, con Colisiones(tablero) verificamos las posibles colisiones con los ladrillos verificando si choca con cada uno de los ladrillos restantes del nivel (tablero.Nivel), la verificación se da de acuerdo a las posición de la pelota y la de cada ladrillo viendo si choca de forma horizontal o vertical, por último este método permite conocer el tipo de cada ladrillo con el que colisiona y darle así velocidad a la pelota. Por último podemos ver si la pelota colisiona con la plataforma y mostrar la pelota siendo esta un cuadro pero mostrado como una bola al poner una imágen
-
-- *Motor.js:*
-Cargamos lo elementos que usaremos y definimos unos parámetro iniciales como el volumen de el audio, como la creación de la plataforma, la pelota y el tablero. 
-
-## Conclusiones:
-Si bien lo consideramos un trabajo completo (Puesto que añade niveles, puntajes, velocidades, sonidos, sprites, etc) También existe bastante espacio para mejorar y trabajar; asi como lo pueden ser añadir más menús y más opciones de customización graficas, al igual que más niveles, o la capacidad de permitirle al usuario crear sus niveles.
-
-Las principalas limitaciones del trabajo fueron principalmente el tiempo de desarrollo, que trajo como consecuencia la menor rigurosidad a la hora de probar el código y por ende una mayor cantidad de errores. Además, esta falta de riempo propició el recorte de algúnas caracteristicas que pudieron haber hecho al juego algo más interesante.
-
-Sin embargo, este proyecto trajo inspiración para desarrollarlo más a futuro, agregando contenido como más sonidos, más posibilidades de juego, e inclusive una expansión para hacer un multijugador. Posibilidades que no solo permiten mejorar la calidad de juego, sino también permiten cultivar una curiosidad por el conocimento. 
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
